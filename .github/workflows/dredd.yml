@@ -11,7 +11,7 @@ jobs:
     runs-on: [linux]
     timeout-minutes: 1
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Testing
       run:  make BRANCH=${GITHUB_HEAD_REF} test
